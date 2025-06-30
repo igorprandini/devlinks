@@ -32,14 +32,8 @@ body * {
 }
 
 body {
-  /* 
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
-
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 #container {
@@ -101,10 +95,6 @@ body {
   -webkit-backdrop-filter: blur(4px);
 }
 
-/* .light #switch button {
-  
-} */
-
 ul {
   list-style: none;
   display: flex;
@@ -159,4 +149,15 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
